@@ -6,9 +6,3 @@
 
 ## Haskell
 ![Ugly colorscheme Haskell screenshot](./images/haskell.png)
-
-## React JS
-![Ugly colorscheme React screenshot](./images/react.png)
-
-## CSS
-![Ugly colorscheme CSS screenshot](./images/css.png)
