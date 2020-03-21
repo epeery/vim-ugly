@@ -1,3 +1,13 @@
-# Ugly, an intentionally ugly Vim colorscheme
+# Ugly ---  a highly readable, intentionally ugly colorscheme
 
-![Ugly colorscheme screenshot](./screenshot.png)
+## C
+![Ugly colorscheme C screenshot](./images/c.png)
+
+## Haskell
+![Ugly colorscheme Haskell screenshot](./images/haskell.png)
+
+## React JS
+![Ugly colorscheme React screenshot](./images/react.png)
+
+## CSS
+![Ugly colorscheme CSS screenshot](./images/css.png)
