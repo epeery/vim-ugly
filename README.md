@@ -1,4 +1,4 @@
-## Ugly
+# Ugly
 > A highly readable, intentionally ugly colorscheme
 
 ## C
