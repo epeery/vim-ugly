@@ -17,11 +17,13 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi NonText ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi Comment ctermbg=NONE ctermfg=3 cterm=bold guibg=NONE guifg=#D56162 gui=bold
     hi Constant ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#AC61FF gui=NONE
+    hi Delimiter ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#5c5cff gui=NONE
     hi Error ctermbg=1 ctermfg=8 cterm=NONE guibg=#D56162 guifg=#ffffff gui=NONE
     hi Identifier ctermbg=NONE ctermfg=8 cterm=bold guibg=NONE guifg=#ffffff gui=bold
     hi Ignore ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi PreProc ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#e5e5e5 gui=NONE
     hi Special ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#cd00cd gui=NONE
+    hi SpecialChar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#5c5cff gui=NONE
     hi Statement ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi String ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#00A9FF gui=NONE
     hi Todo ctermbg=1 ctermfg=10 cterm=NONE guibg=#D56162 guifg=#e5e5e5 gui=NONE
@@ -81,11 +83,13 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi NonText ctermbg=NONE ctermfg=white cterm=NONE
     hi Comment ctermbg=NONE ctermfg=red cterm=bold
     hi Constant ctermbg=NONE ctermfg=purple cterm=NONE
+    hi Delimiter ctermbg=NONE ctermfg=blue cterm=NONE
     hi Error ctermbg=red ctermfg=white cterm=NONE
     hi Identifier ctermbg=NONE ctermfg=white cterm=bold
     hi Ignore ctermbg=NONE ctermfg=NONE cterm=NONE
     hi PreProc ctermbg=NONE ctermfg=white cterm=NONE
     hi Special ctermbg=NONE ctermfg=magenta cterm=NONE
+    hi SpecialChar ctermbg=NONE ctermfg=blue cterm=NONE
     hi Statement ctermbg=NONE ctermfg=white cterm=NONE
     hi String ctermbg=NONE ctermfg=lightblue cterm=NONE
     hi Todo ctermbg=red ctermfg=white cterm=NONE
