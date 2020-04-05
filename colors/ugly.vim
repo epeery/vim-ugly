@@ -13,7 +13,6 @@ endif
 let colors_name = "ugly"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi Normal ctermbg=0 ctermfg=5 cterm=NONE guibg=#000000 guifg=#ACA9AC gui=NONE
     hi NonText ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi Comment ctermbg=NONE ctermfg=3 cterm=bold guibg=NONE guifg=#D56162 gui=bold
     hi Constant ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#AC61FF gui=NONE
@@ -37,8 +36,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TabLineSel ctermbg=1 ctermfg=8 cterm=NONE guibg=#D56162 guifg=#ffffff gui=NONE
     hi Title ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#ACA9AC gui=NONE
     hi CursorLine ctermbg=1 ctermfg=NONE cterm=NONE guibg=#D56162 guifg=NONE gui=NONE
-    hi LineNr ctermbg=0 ctermfg=5 cterm=NONE guibg=#000000 guifg=#ACA9AC gui=NONE
-    hi CursorLineNr ctermbg=0 ctermfg=3 cterm=NONE guibg=#000000 guifg=#D56162 gui=NONE
+    hi LineNr ctermbg=0 ctermfg=5 cterm=NONE guibg=NONE guifg=#ACA9AC gui=NONE
+    hi CursorLineNr ctermbg=0 ctermfg=3 cterm=NONE guibg=NONE guifg=#D56162 gui=NONE
     hi helpLeadBlank ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi helpNormal ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi Visual ctermbg=8 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
