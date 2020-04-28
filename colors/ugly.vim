@@ -2,7 +2,7 @@
 " Author:      Eli Peery (eli.g.peery@gmail.com)
 " Webpage:     https://epeery.com
 " Description: An intentionally ugly colorscheme
-" Last Change: 2020-03-21
+" Last Change: 2020-04-28
 
 hi clear
 
@@ -21,7 +21,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Identifier ctermbg=NONE ctermfg=8 cterm=bold guibg=NONE guifg=#ffffff gui=bold
     hi Ignore ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi PreProc ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#e5e5e5 gui=NONE
-    hi Special ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#cd00cd gui=NONE
+    hi Special ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#AC61FF gui=NONE
     hi SpecialChar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#5c5cff gui=NONE
     hi Statement ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi String ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#00A9FF gui=NONE
@@ -36,8 +36,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TabLineSel ctermbg=1 ctermfg=8 cterm=NONE guibg=#D56162 guifg=#ffffff gui=NONE
     hi Title ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#ACA9AC gui=NONE
     hi CursorLine ctermbg=1 ctermfg=NONE cterm=NONE guibg=#D56162 guifg=NONE gui=NONE
-    hi LineNr ctermbg=0 ctermfg=5 cterm=NONE guibg=NONE guifg=#ACA9AC gui=NONE
-    hi CursorLineNr ctermbg=0 ctermfg=3 cterm=NONE guibg=NONE guifg=#D56162 gui=NONE
+    hi LineNr ctermbg=NONE ctermfg=5 cterm=NONE guibg=NONE guifg=#ACA9AC gui=NONE
+    hi CursorLineNr ctermbg=NONE ctermfg=3 cterm=NONE guibg=NONE guifg=#D56162 gui=NONE
     hi helpLeadBlank ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi helpNormal ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi Visual ctermbg=8 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
@@ -46,7 +46,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi PmenuSbar ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi PmenuSel ctermbg=5 ctermfg=1 cterm=NONE guibg=#ACA9AC guifg=#D56162 gui=NONE
     hi PmenuThumb ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
-    hi FoldColumn ctermbg=1 ctermfg=12 cterm=NONE guibg=#D56162 guifg=#cd00cd gui=NONE
+    hi FoldColumn ctermbg=1 ctermfg=12 cterm=NONE guibg=#D56162 guifg=#AC61FF gui=NONE
     hi Folded ctermbg=1 ctermfg=0 cterm=NONE guibg=#D56162 guifg=#000000 gui=NONE
     hi WildMenu ctermbg=10 ctermfg=8 cterm=NONE guibg=#e5e5e5 guifg=#ffffff gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=3 cterm=NONE guibg=NONE guifg=#D56162 gui=NONE
@@ -60,7 +60,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi MatchParen ctermbg=NONE ctermfg=1 cterm=NONE guibg=NONE guifg=#D56162 gui=NONE
     hi SpellBad ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#ffffff
     hi SpellCap ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#ACA9AC
-    hi SpellLocal ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#cd00cd
+    hi SpellLocal ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#AC61FF
     hi SpellRare ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#D5D2FF
     hi ColorColumn ctermbg=1 ctermfg=NONE cterm=NONE guibg=#D56162 guifg=NONE gui=NONE
     hi SignColumn ctermbg=0 ctermfg=0 cterm=NONE guibg=#000000 guifg=#000000 gui=NONE
@@ -102,8 +102,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TabLineSel ctermbg=red ctermfg=white cterm=NONE
     hi Title ctermbg=NONE ctermfg=grey cterm=NONE
     hi CursorLine ctermbg=red ctermfg=NONE cterm=NONE
-    hi LineNr ctermbg=black ctermfg=grey cterm=NONE
-    hi CursorLineNr ctermbg=black ctermfg=red cterm=NONE
+    hi LineNr ctermbg=NONE ctermfg=grey cterm=NONE
+    hi CursorLineNr ctermbg=NONE ctermfg=red cterm=NONE
     hi helpLeadBlank ctermbg=black ctermfg=white cterm=NONE
     hi helpNormal ctermbg=black ctermfg=white cterm=NONE
     hi Visual ctermbg=white ctermfg=black cterm=NONE
@@ -157,7 +157,7 @@ let g:terminal_ansi_colors = [
         \ '#D56162',
         \ '#83FA62',
         \ '#D56162',
-        \ '#cd00cd',
+        \ '#AC61FF',
         \ '#ACA9AC',
         \ '#00cdcd',
         \ '#e5e5e5',
@@ -165,7 +165,7 @@ let g:terminal_ansi_colors = [
         \ '#AC61FF',
         \ '#e5e5e5',
         \ '#00A9FF',
-        \ '#cd00cd',
+        \ '#AC61FF',
         \ '#ACA9AC',
         \ '#D5D2FF',
         \ '#5c5cff',
