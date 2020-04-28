@@ -16,17 +16,17 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi NonText ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi Comment ctermbg=NONE ctermfg=3 cterm=bold guibg=NONE guifg=#D56162 gui=bold
     hi Constant ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#AC61FF gui=NONE
-    hi Delimiter ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#5c5cff gui=NONE
+    hi Delimiter ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#00A9FF gui=NONE
     hi Error ctermbg=1 ctermfg=8 cterm=NONE guibg=#D56162 guifg=#ffffff gui=NONE
     hi Identifier ctermbg=NONE ctermfg=8 cterm=bold guibg=NONE guifg=#ffffff gui=bold
     hi Ignore ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
-    hi PreProc ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#e5e5e5 gui=NONE
+    hi PreProc ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#ACA9AC gui=NONE
     hi Special ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#AC61FF gui=NONE
-    hi SpecialChar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#5c5cff gui=NONE
+    hi SpecialChar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#00A9FF gui=NONE
     hi Statement ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi String ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#00A9FF gui=NONE
-    hi Todo ctermbg=1 ctermfg=10 cterm=NONE guibg=#D56162 guifg=#e5e5e5 gui=NONE
-    hi Type ctermbg=NONE ctermfg=10 cterm=bold guibg=NONE guifg=#e5e5e5 gui=bold
+    hi Todo ctermbg=1 ctermfg=10 cterm=NONE guibg=#D56162 guifg=#ACA9AC gui=NONE
+    hi Type ctermbg=NONE ctermfg=10 cterm=bold guibg=NONE guifg=#ACA9AC gui=bold
     hi Underlined ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi StatusLine ctermbg=5 ctermfg=0 cterm=NONE guibg=#ACA9AC guifg=#000000 gui=NONE
     hi StatusLineNC ctermbg=1 ctermfg=3 cterm=NONE guibg=#D56162 guifg=#D56162 gui=NONE
@@ -48,7 +48,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi PmenuThumb ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi FoldColumn ctermbg=1 ctermfg=12 cterm=NONE guibg=#D56162 guifg=#AC61FF gui=NONE
     hi Folded ctermbg=1 ctermfg=0 cterm=NONE guibg=#D56162 guifg=#000000 gui=NONE
-    hi WildMenu ctermbg=10 ctermfg=8 cterm=NONE guibg=#e5e5e5 guifg=#ffffff gui=NONE
+    hi WildMenu ctermbg=10 ctermfg=8 cterm=NONE guibg=#ACA9AC guifg=#ffffff gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=3 cterm=NONE guibg=NONE guifg=#D56162 gui=NONE
     hi DiffAdd ctermbg=1 ctermfg=11 cterm=NONE guibg=#D56162 guifg=#00A9FF gui=NONE
     hi DiffChange ctermbg=1 ctermfg=3 cterm=NONE guibg=#D56162 guifg=#D56162 gui=NONE
@@ -78,7 +78,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
 
-    hi Normal ctermbg=black ctermfg=grey cterm=NONE
     hi NonText ctermbg=NONE ctermfg=white cterm=NONE
     hi Comment ctermbg=NONE ctermfg=red cterm=bold
     hi Constant ctermbg=NONE ctermfg=purple cterm=NONE
@@ -159,14 +158,14 @@ let g:terminal_ansi_colors = [
         \ '#D56162',
         \ '#AC61FF',
         \ '#ACA9AC',
-        \ '#00cdcd',
-        \ '#e5e5e5',
+        \ '#00D2D5',
+        \ '#ACA9AC',
         \ '#ffffff',
         \ '#AC61FF',
-        \ '#e5e5e5',
+        \ '#ACA9AC',
         \ '#00A9FF',
         \ '#AC61FF',
         \ '#ACA9AC',
         \ '#D5D2FF',
-        \ '#5c5cff',
+        \ '#00A9FF',
         \ ]
