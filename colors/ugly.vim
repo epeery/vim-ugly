@@ -13,21 +13,21 @@ endif
 let colors_name = "ugly"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi NonText ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi NonText ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Comment ctermbg=NONE ctermfg=3 cterm=bold guibg=NONE guifg=#D56162 gui=bold
     hi Constant ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#AC61FF gui=NONE
     hi Delimiter ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#00A9FF gui=NONE
     hi Error ctermbg=1 ctermfg=8 cterm=NONE guibg=#D56162 guifg=#ffffff gui=NONE
-    hi Identifier ctermbg=NONE ctermfg=8 cterm=bold guibg=NONE guifg=#ffffff gui=bold
+    hi Identifier ctermbg=NONE ctermfg=NONE cterm=bold guibg=NONE guifg=NONE gui=bold
     hi Ignore ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi PreProc ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#ACA9AC gui=NONE
     hi Special ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#AC61FF gui=NONE
     hi SpecialChar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#00A9FF gui=NONE
-    hi Statement ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi Statement ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi String ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#00A9FF gui=NONE
     hi Todo ctermbg=1 ctermfg=10 cterm=NONE guibg=#D56162 guifg=#ACA9AC gui=NONE
     hi Type ctermbg=NONE ctermfg=10 cterm=bold guibg=NONE guifg=#ACA9AC gui=bold
-    hi Underlined ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi Underlined ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi StatusLine ctermbg=5 ctermfg=0 cterm=NONE guibg=#ACA9AC guifg=#000000 gui=NONE
     hi StatusLineNC ctermbg=1 ctermfg=3 cterm=NONE guibg=#D56162 guifg=#D56162 gui=NONE
     hi VertSplit ctermbg=5 ctermfg=5 cterm=NONE guibg=#ACA9AC guifg=#ACA9AC gui=NONE
@@ -41,7 +41,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi helpLeadBlank ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi helpNormal ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi Visual ctermbg=8 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
-    hi VisualNOS ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi VisualNOS ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Pmenu ctermbg=5 ctermfg=0 cterm=NONE guibg=#ACA9AC guifg=#000000 gui=NONE
     hi PmenuSbar ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi PmenuSel ctermbg=5 ctermfg=1 cterm=NONE guibg=#ACA9AC guifg=#D56162 gui=NONE
@@ -58,7 +58,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Search ctermbg=1 ctermfg=8 cterm=NONE guibg=#D56162 guifg=#ffffff gui=NONE
     hi Directory ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#ACA9AC gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=1 cterm=NONE guibg=NONE guifg=#D56162 gui=NONE
-    hi SpellBad ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#ffffff
+    hi SpellBad ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#D56162
     hi SpellCap ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#ACA9AC
     hi SpellLocal ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#AC61FF
     hi SpellRare ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#D5D2FF
@@ -78,21 +78,21 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
 
-    hi NonText ctermbg=NONE ctermfg=white cterm=NONE
+    hi NonText ctermbg=NONE ctermfg=NONE cterm=NONE
     hi Comment ctermbg=NONE ctermfg=red cterm=bold
     hi Constant ctermbg=NONE ctermfg=purple cterm=NONE
     hi Delimiter ctermbg=NONE ctermfg=blue cterm=NONE
     hi Error ctermbg=red ctermfg=white cterm=NONE
-    hi Identifier ctermbg=NONE ctermfg=white cterm=bold
+    hi Identifier ctermbg=NONE ctermfg=NONE cterm=bold
     hi Ignore ctermbg=NONE ctermfg=NONE cterm=NONE
     hi PreProc ctermbg=NONE ctermfg=white cterm=NONE
     hi Special ctermbg=NONE ctermfg=magenta cterm=NONE
     hi SpecialChar ctermbg=NONE ctermfg=blue cterm=NONE
-    hi Statement ctermbg=NONE ctermfg=white cterm=NONE
+    hi Statement ctermbg=NONE ctermfg=NONE cterm=NONE
     hi String ctermbg=NONE ctermfg=lightblue cterm=NONE
     hi Todo ctermbg=red ctermfg=white cterm=NONE
     hi Type ctermbg=NONE ctermfg=white cterm=bold
-    hi Underlined ctermbg=NONE ctermfg=white cterm=NONE
+    hi Underlined ctermbg=NONE ctermfg=NONE cterm=NONE
     hi StatusLine ctermbg=grey ctermfg=black cterm=NONE
     hi StatusLineNC ctermbg=red ctermfg=red cterm=NONE
     hi VertSplit ctermbg=grey ctermfg=grey cterm=NONE
@@ -106,7 +106,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi helpLeadBlank ctermbg=black ctermfg=white cterm=NONE
     hi helpNormal ctermbg=black ctermfg=white cterm=NONE
     hi Visual ctermbg=white ctermfg=black cterm=NONE
-    hi VisualNOS ctermbg=NONE ctermfg=white cterm=NONE
+    hi VisualNOS ctermbg=NONE ctermfg=NONE cterm=NONE
     hi Pmenu ctermbg=grey ctermfg=black cterm=NONE
     hi PmenuSbar ctermbg=black ctermfg=white cterm=NONE
     hi PmenuSel ctermbg=grey ctermfg=red cterm=NONE
