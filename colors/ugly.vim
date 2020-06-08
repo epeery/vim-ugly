@@ -70,6 +70,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Cursor ctermbg=5 ctermfg=0 cterm=NONE guibg=#ACA9AC guifg=#000000 gui=NONE
     hi CursorColumn ctermbg=1 ctermfg=NONE cterm=NONE guibg=#D56162 guifg=NONE gui=NONE
     hi QuickFixLine ctermbg=1 ctermfg=NONE cterm=NONE guibg=#D56162 guifg=NONE gui=NONE
+    hi Conceal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi ToolbarLine ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi ToolbarButton ctermbg=8 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
 
@@ -133,6 +134,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Cursor ctermbg=grey ctermfg=black cterm=NONE
     hi CursorColumn ctermbg=red ctermfg=NONE cterm=NONE
     hi QuickFixLine ctermbg=red ctermfg=NONE cterm=NONE
+    hi Conceal ctermbg=NONE ctermfg=NONE cterm=NONE
     hi ToolbarLine ctermbg=black ctermfg=white cterm=NONE
     hi ToolbarButton ctermbg=white ctermfg=black cterm=NONE
 endif
@@ -144,7 +146,6 @@ hi link StatusLineTermNC StatusLineNC
 hi link WarningMsg Error
 hi link CursorIM Cursor
 hi link Terminal Normal
-hi link Conceal Normal
 hi link debugPC Debug
 hi link debugBreakpoint Debug
 
