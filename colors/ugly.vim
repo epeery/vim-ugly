@@ -144,6 +144,7 @@ hi link StatusLineTermNC StatusLineNC
 hi link WarningMsg Error
 hi link CursorIM Cursor
 hi link Terminal Normal
+hi link Conceal Normal
 hi link debugPC Debug
 hi link debugBreakpoint Debug
 
