@@ -2,7 +2,7 @@
 " Author:      Eli Peery (eli.g.peery@gmail.com)
 " Webpage:     https://epeery.com
 " Description: An intentionally ugly colorscheme
-" Last Change: 2020-04-28
+" Last Change: 2020-07-24
 
 hi clear
 
@@ -41,9 +41,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi helpLeadBlank ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi helpNormal ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi Visual ctermbg=11 ctermfg=8 cterm=NONE guibg=#00A9FF guifg=#ffffff gui=NONE
-    hi Pmenu ctermbg=5 ctermfg=0 cterm=NONE guibg=#ACA9AC guifg=#000000 gui=NONE
+    hi Pmenu ctermbg=NONE ctermfg=5 cterm=NONE guibg=NONE guifg=#ACA9AC gui=NONE
     hi PmenuSbar ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
-    hi PmenuSel ctermbg=5 ctermfg=1 cterm=NONE guibg=#ACA9AC guifg=#D56162 gui=NONE
+    hi PmenuSel ctermbg=5 ctermfg=0 cterm=NONE guibg=#ACA9AC guifg=#000000 gui=NONE
     hi PmenuThumb ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi FoldColumn ctermbg=1 ctermfg=12 cterm=NONE guibg=#D56162 guifg=#AC61FF gui=NONE
     hi Folded ctermbg=1 ctermfg=0 cterm=NONE guibg=#D56162 guifg=#000000 gui=NONE
@@ -62,7 +62,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpellLocal ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#AC61FF
     hi SpellRare ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#D5D2FF
     hi ColorColumn ctermbg=1 ctermfg=NONE cterm=NONE guibg=#D56162 guifg=NONE gui=NONE
-    hi SignColumn ctermbg=0 ctermfg=0 cterm=NONE guibg=#000000 guifg=#000000 gui=NONE
+    hi SignColumn ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi ErrorMsg ctermbg=0 ctermfg=8 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi ModeMsg ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#00A9FF gui=NONE
     hi MoreMsg ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#00A9FF gui=NONE
@@ -105,9 +105,9 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi helpLeadBlank ctermbg=black ctermfg=white cterm=NONE
     hi helpNormal ctermbg=black ctermfg=white cterm=NONE
     hi Visual ctermbg=lightblue ctermfg=white cterm=NONE
-    hi Pmenu ctermbg=grey ctermfg=black cterm=NONE
+    hi Pmenu ctermbg=NONE ctermfg=grey cterm=NONE
     hi PmenuSbar ctermbg=black ctermfg=white cterm=NONE
-    hi PmenuSel ctermbg=grey ctermfg=red cterm=NONE
+    hi PmenuSel ctermbg=grey ctermfg=black cterm=NONE
     hi PmenuThumb ctermbg=black ctermfg=white cterm=NONE
     hi FoldColumn ctermbg=red ctermfg=magenta cterm=NONE
     hi Folded ctermbg=red ctermfg=black cterm=NONE
@@ -126,7 +126,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi SpellLocal ctermbg=NONE ctermfg=NONE cterm=undercurl
     hi SpellRare ctermbg=NONE ctermfg=NONE cterm=undercurl
     hi ColorColumn ctermbg=red ctermfg=NONE cterm=NONE
-    hi SignColumn ctermbg=black ctermfg=black cterm=NONE
+    hi SignColumn ctermbg=NONE ctermfg=white cterm=NONE
     hi ErrorMsg ctermbg=black ctermfg=white cterm=NONE
     hi ModeMsg ctermbg=NONE ctermfg=lightblue cterm=NONE
     hi MoreMsg ctermbg=NONE ctermfg=lightblue cterm=NONE
